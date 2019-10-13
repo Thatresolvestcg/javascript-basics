@@ -35,8 +35,15 @@ const absolute = a => {
 };
 
 const quotient = (a, b) => {
-  return parseInt(a / b);
+  num = (a / b);
+  if (num < 0) {
+    num = Math.floor(num) + 1;
+  } else {
+    num = Math.floor(num);
+  }
+  return num;
 };
+
 
 const remainder = (a, b) => {
   return a % b;
