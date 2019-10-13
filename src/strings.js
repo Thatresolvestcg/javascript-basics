@@ -19,8 +19,13 @@ const firstCharacter = string => {
 };
 
 const firstCharacters = (string, n) => {
-  // your code here
+  let text = "";
+  for (i = 0; i < n; i++) {
+    text += string.charAt(i);
+  }
+  return text;
 };
+
 
 module.exports = {
   sayHello,
