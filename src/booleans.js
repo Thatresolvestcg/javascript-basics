@@ -11,31 +11,56 @@ const both = (a, b) => {
 };
 
 const either = (a, b) => {
-  // your code here
+  if (a || b) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 const none = (a, b) => {
-  // your code here
+  if (!a && !b) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
+
 const one = (a, b) => {
-  // your code here
+  if (a !== b) {
+    return true
+  } else {
+    return false;
+  }
 };
 
 const truthiness = a => {
-  // your code here
+  return Boolean(a);
 };
 
 const isEqual = (a, b) => {
-  // your code here
+  if (a === b) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 const isGreaterThan = (a, b) => {
-  // your code here
+  if (a > b) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 const isLessThanOrEqualTo = (a, b) => {
-  // your code here
+  if (a <= b) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 const isOdd = a => {
