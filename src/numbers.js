@@ -37,7 +37,7 @@ const absolute = a => {
 const quotient = (a, b) => {
   num = (a / b);
   if (num < 0) {
-    num = Math.floor(num) + 1;
+    num = Math.ceil(num);
   } else {
     num = Math.floor(num);
   }
