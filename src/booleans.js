@@ -64,23 +64,40 @@ const isLessThanOrEqualTo = (a, b) => {
 };
 
 const isOdd = a => {
-  // your code here
+  if (a % 2 == 1) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 const isEven = a => {
-  // your code here
+  if (a % 2 == 0) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 const isSquare = a => {
-  // your code here
+  if (Math.sqrt(a) % 1 == 0) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 const startsWith = (char, string) => {
-  // your code here
+  if (string.startsWith(char)) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 const containsVowels = string => {
-  // your code here
+
+
 };
 
 const isLowerCase = string => {
