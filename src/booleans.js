@@ -1,5 +1,5 @@
 const negate = a => {
-  // your code here
+  return !a;
 };
 
 const both = (a, b) => {
