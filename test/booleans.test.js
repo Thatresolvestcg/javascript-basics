@@ -24,7 +24,7 @@ describe("negate", () => {
 });
 
 describe("both", () => {
-  xit("returns true if both of the given values are true", () => {
+  it("returns true if both of the given values are true", () => {
     expect(both(true, true)).toBe(true);
     expect(both(true, false)).toBe(false);
     expect(both(false, true)).toBe(false);

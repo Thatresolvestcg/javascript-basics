@@ -3,7 +3,11 @@ const negate = a => {
 };
 
 const both = (a, b) => {
-  // your code here
+  if (a && b) {
+    return true;
+  } else {
+    return false;
+  }
 };
 
 const either = (a, b) => {
