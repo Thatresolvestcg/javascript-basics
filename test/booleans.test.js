@@ -138,8 +138,8 @@ describe("startsWith", () => {
 describe("containsVowels", () => {
   it("returns whether the given string contains vowels", () => {
     expect(containsVowels("cat")).toBe(true);
-    // expect(containsVowels("DOG")).toBe(true);
-    // expect(containsVowels("why")).toBe(false);
+    expect(containsVowels("DOG")).toBe(true);
+    expect(containsVowels("why")).toBe(false);
   });
 });
 

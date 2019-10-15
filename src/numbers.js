@@ -15,11 +15,11 @@ const divide = (a, b) => {
 };
 
 const power = (a, b) => {
-  return Math.pow(a, b)
+  return a ** b;
 };
 
 const round = a => {
-  return Math.round(a)
+  return Math.round(a);
 };
 
 const roundUp = a => {
@@ -35,7 +35,7 @@ const absolute = a => {
 };
 
 const quotient = (a, b) => {
-  num = (a / b);
+  num = a / b;
   if (num < 0) {
     num = Math.ceil(num);
   } else {
