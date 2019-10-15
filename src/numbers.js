@@ -44,7 +44,6 @@ const quotient = (a, b) => {
   return num;
 };
 
-
 const remainder = (a, b) => {
   return a % b;
 };
