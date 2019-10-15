@@ -84,14 +84,14 @@ const startsWith = (char, string) => {
 };
 
 const containsVowels = string => {
-  // const vowels = ["a", "e", "i", "o", "u"];
-  // let vowelCount = 0;
-  // vowels.forEach(vowel => {
-  //   if (string.toLowerCase.includes(vowel)) {
-  //     vowelCount += 1;
-  //   }
-  // });
-  // return !!vowelCount;
+  const vowels = ["a", "e", "i", "o", "u"];
+  let vowelCount = 0;
+  vowels.forEach(vowel => {
+    if (string.toLowerCase().includes(vowel)) {
+      vowelCount += 1;
+    }
+  });
+  return !!vowelCount;
 };
 
 const isLowerCase = string => {
