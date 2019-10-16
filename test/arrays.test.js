@@ -86,7 +86,7 @@ describe("numbersToStrings", () => {
 });
 
 describe("uppercaseWordsInArray", () => {
-  xit("makes every string in the array uppercase", () => {
+  it("makes every string in the array uppercase", () => {
     expect(uppercaseWordsInArray(["cat", "mouse", "banana"])).toEqual([
       "CAT",
       "MOUSE",
@@ -106,13 +106,13 @@ describe("reverseWordsInArray", () => {
 });
 
 describe("onlyEven", () => {
-  xit("filters the array and only returns even numbers", () => {
+  it("filters the array and only returns even numbers", () => {
     expect(onlyEven([1, 2, 3, 4, 5, 6, 7, 8])).toEqual([2, 4, 6, 8]);
   });
 });
 
 describe("removeNthElement2", () => {
-  xit("returns an array with the nth element removed, and does not mutate the original", () => {
+  it("returns an array with the nth element removed, and does not mutate the original", () => {
     const array = ["bike", "car", "train", "bus"];
     expect(removeNthElement2(2, array)).toEqual(["bike", "car", "bus"]);
     expect(array).toEqual(["bike", "car", "train", "bus"]);
@@ -188,7 +188,7 @@ describe("elementsStartingWithAVowel", () => {
 });
 
 describe("removeSpaces", () => {
-  xit("returns the string with the space characters removed", () => {
+  it("returns the string with the space characters removed", () => {
     expect(removeSpaces("this string has spaces")).toEqual(
       "thisstringhasspaces"
     );
@@ -199,7 +199,7 @@ describe("removeSpaces", () => {
 });
 
 describe("sumNumbers", () => {
-  xit("returns the sum of the numbers in the array", () => {
+  it("returns the sum of the numbers in the array", () => {
     expect(sumNumbers([1, 3, 5, 6, 2, 8])).toEqual(25);
   });
 });

@@ -29,19 +29,25 @@ const numbersToStrings = numbers => {
 };
 
 const uppercaseWordsInArray = strings => {
-  // your code here
+  const newArray = strings.map(element => element.toUpperCase());
+  return newArray;
 };
 
 const reverseWordsInArray = strings => {
-  // your code here
 };
 
 const onlyEven = numbers => {
-  // your code here
-};
+  const evenNumbers = numbers.filter(element => {
+    if (element % 2 === 0) // returning zero here means we are even.
+      return element;
+  });
+  return evenNumbers;
+}
 
 const removeNthElement2 = (index, array) => {
-  // your code here
+  const newArray = [...array];
+  newArray.splice(index, 1);
+  return newArray;
 };
 
 const elementsStartingWithAVowel = strings => {
@@ -49,11 +55,13 @@ const elementsStartingWithAVowel = strings => {
 };
 
 const removeSpaces = string => {
-  // your code here
+  return string.replace(/\s/g, "");
 };
 
 const sumNumbers = numbers => {
-  // your code here
+  return numbers.reduce(function (a, b) {
+    return a + b
+  }, 0);
 };
 
 const sortByLastLetter = strings => {
