@@ -120,7 +120,7 @@ describe("removeNthElement2", () => {
 });
 
 describe("elementsStartingWithAVowel", () => {
-  xit("returns elements starting with a vowel", () => {
+  it("returns elements starting with a vowel", () => {
     expect(
       elementsStartingWithAVowel([
         "apple",

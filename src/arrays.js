@@ -34,6 +34,7 @@ const uppercaseWordsInArray = strings => {
 };
 
 const reverseWordsInArray = strings => {
+  // code goes here
 };
 
 const onlyEven = numbers => {
@@ -51,7 +52,7 @@ const removeNthElement2 = (index, array) => {
 };
 
 const elementsStartingWithAVowel = strings => {
-  // your code here
+  return strings.filter(str => /^[aeiou]/i.test(str));
 };
 
 const removeSpaces = string => {
