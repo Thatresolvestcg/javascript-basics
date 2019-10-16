@@ -3,23 +3,25 @@ const getNthElement = (index, array) => {
 };
 
 const arrayToCSVString = array => {
-  // 
+  return array.join();
 };
 
 const csvStringToArray = string => {
-  // your code here
+  return string.split(',')
 };
 
 const addToArray = (element, array) => {
-  // your code here
+  array.push(element);
 };
 
 const addToArray2 = (element, array) => {
-  // your code here
+  const array2 = array.concat(element);
+  return array2;
 };
 
 const removeNthElement = (index, array) => {
-  // your code here
+  let removedArray = array.splice(index, 1);
+  return removedArray;
 };
 
 const numbersToStrings = numbers => {
