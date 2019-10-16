@@ -91,7 +91,7 @@ const containsVowels = string => {
       vowelCount += 1;
     }
   });
-  return !!vowelCount;
+  return vowelCount > 0;
 };
 
 const isLowerCase = string => {
