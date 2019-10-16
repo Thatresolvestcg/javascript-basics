@@ -34,7 +34,10 @@ const uppercaseWordsInArray = strings => {
 };
 
 const reverseWordsInArray = strings => {
-  // code goes here
+  var joinArray = strings.join("");
+  var reverseString = joinArray.reverse();
+  var splitString = reverseString.split("");
+  return splitString;
 };
 
 const onlyEven = numbers => {
@@ -66,7 +69,15 @@ const sumNumbers = numbers => {
 };
 
 const sortByLastLetter = strings => {
-  // your code here
+  var sorted = strings.sort(function (a, b) {
+
+    if (a[a.length - 1] > b[b.length - 1])
+      return 1;
+    else if (a[a.length - 1] < b[b.length - 1])
+      return -1;
+    return 0;
+  })
+  return sorted;
 };
 
 module.exports = {

@@ -96,7 +96,7 @@ describe("uppercaseWordsInArray", () => {
 });
 
 describe("reverseWordsInArray", () => {
-  xit("reverses every string in an array", () => {
+  it("reverses every string in an array", () => {
     expect(reverseWordsInArray(["cat", "Mouse", "banana"])).toEqual([
       "tac",
       "esuoM",
@@ -153,7 +153,7 @@ describe("elementsStartingWithAVowel", () => {
     ).toEqual(["apple", "epple", "ipple", "opple", "upple"]);
   });
 
-  xit("is case insensitive", () => {
+  it("is case insensitive", () => {
     expect(
       elementsStartingWithAVowel([
         "Apple",
@@ -205,7 +205,7 @@ describe("sumNumbers", () => {
 });
 
 describe("sortByLastLetter", () => {
-  xit("sorts the string by the last character", () => {
+  it("sorts the string by the last character", () => {
     expect(
       sortByLastLetter(["Lannister", "Stark", "Greyjoy", "Targaryen"])
     ).toEqual(["Stark", "Targaryen", "Lannister", "Greyjoy"]);
