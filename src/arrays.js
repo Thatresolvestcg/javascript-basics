@@ -3,11 +3,11 @@ const getNthElement = (index, array) => {
 };
 
 const arrayToCSVString = array => {
-  // 
+  return array.join();
 };
 
 const csvStringToArray = string => {
-  // your code here
+  return JSON.parse(`[${string}]`);
 };
 
 const addToArray = (element, array) => {
