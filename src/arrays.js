@@ -7,55 +7,81 @@ const arrayToCSVString = array => {
 };
 
 const csvStringToArray = string => {
+<<<<<<< HEAD
   return JSON.parse(`[${string}]`);
+=======
+  return string.split(',')
+>>>>>>> 0c2ff0e4f7d4e1ef1edb7b1c1182f8d4631fab28
 };
 
 const addToArray = (element, array) => {
-  // your code here
+  array.push(element);
 };
 
 const addToArray2 = (element, array) => {
-  // your code here
+  const array2 = array.concat(element);
+  return array2;
 };
 
 const removeNthElement = (index, array) => {
-  // your code here
+  let removedArray = array.splice(index, 1);
+  return removedArray;
 };
 
 const numbersToStrings = numbers => {
-  // your code here
+  return numbers.map(String)
 };
 
 const uppercaseWordsInArray = strings => {
-  // your code here
+  const newArray = strings.map(element => element.toUpperCase());
+  return newArray;
 };
 
 const reverseWordsInArray = strings => {
-  // your code here
+  var joinArray = strings.join("");
+  var reverseString = joinArray.reverse();
+  var splitString = reverseString.split("");
+  return splitString;
 };
 
 const onlyEven = numbers => {
-  // your code here
-};
+  const evenNumbers = numbers.filter(element => {
+    if (element % 2 === 0) // returning zero here means we are even.
+      return element;
+  });
+  return evenNumbers;
+}
 
 const removeNthElement2 = (index, array) => {
-  // your code here
+  const newArray = [...array];
+  newArray.splice(index, 1);
+  return newArray;
 };
 
 const elementsStartingWithAVowel = strings => {
-  // your code here
+  return strings.filter(str => /^[aeiou]/i.test(str));
 };
 
 const removeSpaces = string => {
-  // your code here
+  return string.replace(/\s/g, "");
 };
 
 const sumNumbers = numbers => {
-  // your code here
+  return numbers.reduce(function (a, b) {
+    return a + b
+  }, 0);
 };
 
 const sortByLastLetter = strings => {
-  // your code here
+  var sorted = strings.sort(function (a, b) {
+
+    if (a[a.length - 1] > b[b.length - 1])
+      return 1;
+    else if (a[a.length - 1] < b[b.length - 1])
+      return -1;
+    return 0;
+  })
+  return sorted;
 };
 
 module.exports = {
